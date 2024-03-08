@@ -3,6 +3,7 @@ body {
   background-color: #1e2022;
   cursor: none;
   height: 50%;
+  overflow-x: hidden;
 }
 /*
 #1e2022

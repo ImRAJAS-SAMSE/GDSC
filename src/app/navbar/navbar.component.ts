@@ -5,8 +5,13 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
+  public isNavLinksVisible: boolean = false;
 
+  // Function to toggle
+  toggleNavLinks(): void {
+    this.isNavLinksVisible = !this.isNavLinksVisible;
+  }
 }

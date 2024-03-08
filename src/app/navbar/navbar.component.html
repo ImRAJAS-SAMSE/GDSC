@@ -1,9 +1,9 @@
 <nav class="navbar">
-  <div class="logo">
+  <div class="logo" (click)="toggleNavLinks()">
     <img src="../assets/gdsc-final.png" alt="Logo" />
   </div>
-  <div class="nav-links">
-    <a href="#events">Events</a>
+  <div class="nav-links" [class.show-nav-links]="isNavLinksVisible">
+    <a routerLink="/events">Events</a>
     <a href="#teams">Teams</a>
     <a href="#contact">Contact Us</a>
   </div>
